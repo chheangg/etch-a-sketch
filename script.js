@@ -60,7 +60,11 @@ function gridHover(gridName) {
         gridEvent.target.style.cssText = `background-color: rgb(${randomRGB()},${randomRGB()},${randomRGB()})`;
 
         setTimeout((e) => {
-            gridEvent.target.style.cssText = 'background-color: white';
+            gridEvent.target.style.cssText = 'background-color:';
         }, 500)
     } )
+}
+
+function randomRGB() {
+    return Math.floor(Math.random() * 255)
 }
